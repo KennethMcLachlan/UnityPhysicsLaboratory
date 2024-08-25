@@ -28504,11 +28504,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8512b22512b8c43378d97167bc140ba0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.46
+      value: -2.422
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8512b22512b8c43378d97167bc140ba0, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -1.181
+      value: -13.91
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 8512b22512b8c43378d97167bc140ba0, type: 3}
       propertyPath: m_LocalRotation.w
@@ -28556,6 +28556,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: 8512b22512b8c43378d97167bc140ba0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1748325683}
+    - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: 8512b22512b8c43378d97167bc140ba0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1748325686}
   m_SourcePrefab: {fileID: 100100000, guid: 8512b22512b8c43378d97167bc140ba0, type: 3}
 --- !u!4 &775733316 stripped
 Transform:
@@ -58965,6 +58968,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1748325686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1748325676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: caa0576750190df4bbfcb9aa4f3d6317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceValue: 10
+  torqueValue: 10
+  puntValue: 10
 --- !u!1 &1751354814 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a9869a2bcd06b4348b0bba10b6dcf06b, type: 3}
