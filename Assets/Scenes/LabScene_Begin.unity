@@ -12716,6 +12716,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: 8512b22512b8c43378d97167bc140ba0, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1666079389}
+    - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: 8512b22512b8c43378d97167bc140ba0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1666079392}
+    - targetCorrespondingSourceObject: {fileID: -927199367670048503, guid: 8512b22512b8c43378d97167bc140ba0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1666079393}
   m_SourcePrefab: {fileID: 100100000, guid: 8512b22512b8c43378d97167bc140ba0, type: 3}
 --- !u!4 &280725069 stripped
 Transform:
@@ -56917,6 +56923,31 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &1666079392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666079383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13754cb607fd0bd459033c8e91f8db41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _defaultGravityValue: -9.81
+--- !u!75 &1666079393
+ConstantForce:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1666079383}
+  m_Enabled: 1
+  m_Force: {x: 0, y: 0, z: 0}
+  m_RelativeForce: {x: 0, y: 0, z: 0}
+  m_Torque: {x: 0, y: 0, z: 0}
+  m_RelativeTorque: {x: 0, y: 0, z: 0}
 --- !u!1 &1667848575 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 3ad715f5f359e455e913327fe680bb76, type: 3}

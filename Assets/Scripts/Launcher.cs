@@ -9,6 +9,7 @@ public class Launcher : MonoBehaviour
 
     //Create a reference to the package prefab
     [SerializeField] private AirMailPackage _airMailPackagePrefab;
+
     //Create a refrence to the amount of force to apply
     [SerializeField] private float _force = 10f;
 
@@ -23,16 +24,16 @@ public class Launcher : MonoBehaviour
     }
     private void Update()
     {
-
         //Get the input from the player
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            //Instantiate the package prefab and apply the force
+            //Instantiate the package prefab
             var spawned = Instantiate(_airMailPackagePrefab, transform.position, transform.rotation);
 
             //Tell the package where to intantiate
             spawned.transform.parent = gameObject.transform.root;
 
+            //Apply the Force
             spawned.Init(transform.forward * _force);
 
             _labComplete.CheckCriteria();

@@ -8,10 +8,10 @@ public class SimulatedPhysics : MonoBehaviour
     //Create a reference for the new simulated scene
     private Scene _simulatedScene;
 
-    //Create a regerence to the physics scene of the simulated scene
+    //Create a reference to the physics scene of the simulated scene
     private PhysicsScene _physicsScene;
 
-    //Create a reference to the lab parent
+    //Create a reference to the lab parent (Container for all objects to be placed in the simulated scene)
     [SerializeField] private Transform _labParent;
 
     void Start()
@@ -57,7 +57,7 @@ public class SimulatedPhysics : MonoBehaviour
 
     public void SimulateTrajectory(AirMailPackage airMailPackagePrefab, Vector3 pos, Vector3 velocity)
     {
-        //Reference for a simulate object (_airMailPackage)
+        //Reference for a simulated object (_airMailPackage)
         var simulatedObj = Instantiate(airMailPackagePrefab, pos, Quaternion.identity);
 
         //Simulate object renderer is disabled
@@ -72,13 +72,13 @@ public class SimulatedPhysics : MonoBehaviour
         //Set the amount of points in the line renderer component
         _line.positionCount = _maxPhysicsIterations;
 
-        //In a for loop, set the positions of the Line Renderer based on a max physics interactions value
+        //In a for loop, set the positions of the Line Renderer based on a max physics iterations value
         for (int i = 0; i < _maxPhysicsIterations; i++)
         {
             //Simulate the physics scene
             _physicsScene.Simulate(Time.fixedDeltaTime * 4);
 
-            //Set the positions of each poent on the Line Renderer using the simulated object position
+            //Set the positions of each point on the Line Renderer using the simulated object position
             _line.SetPosition(i, simulatedObj.transform.position);
         }
 
